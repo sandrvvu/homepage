@@ -336,3 +336,24 @@ body {
 .additional-info__dislikes-item h3 {
     margin-bottom: 5px;
 }
+
+
+/* Footer block styles */
+.footer {
+    margin-top: 5em;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    text-align: center;
+    padding: 3em 0;
+}
+
+.footer__title {
+    font-size: 3rem;
+    color: var(--light-text-color);
+}
+
+.footer__copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
