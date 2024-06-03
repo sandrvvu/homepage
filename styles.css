@@ -357,3 +357,130 @@ body {
     margin-top: 10px;
     font-size: 0.9rem;
 }
+
+
+/* Responsive design */
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .intro {
+        gap: 2em;
+    }
+
+    .intro__title {
+        font-size: 3rem;
+    }
+
+    .intro__subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro__image-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .intro__text-container {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .additional-info__likes {
+        gap: 10px;
+    }
+
+    .additional-info__likes-item {
+        width: 48%;
+    }
+
+    .additional-info__likes-text {
+        font-size: 1rem;
+    }
+
+
+    .additional-info__dislikes-item {
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1.52fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.4fr;
+        grid-template-areas: 'A  A  B  C' 'A  A  D  D' 'E  E  E  E';
+    }
+
+    .intro__image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .additional-info__likes-item {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .additional-info__likes-image {
+        width: 100%;
+        height: 170px;
+    }
+
+    .additional-info__dislikes-container {
+        flex-direction: column;
+    }
+
+    .footer__title {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 80%;
+    }
+
+    .intro__title {
+        font-size: 2.5rem;
+    }
+
+    .education__title,
+    .additional-info__title {
+        font-size: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1.52fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.4fr;
+        grid-template-areas: 'A  A  B  C' 'A  A  D  D' 'E  E  E  E';
+    }
+
+    .additional-info__likes-container {
+        flex-direction: column;
+    }
+
+    .additional-info__likes-item {
+        width: 100%;
+    }
+
+    .footer__copyright {
+        font-size: 0.8rem;
+    }
+
+}
