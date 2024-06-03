@@ -238,3 +238,101 @@ body {
     opacity: .9;
     transform: scale(1.15);
 }
+
+/* Additional info block styles */
+.additional-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    text-align: center;
+    gap: 2em;
+}
+
+.additional-info__title {
+    font-size: 3rem;
+}
+
+.additional-info__likes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 1em;
+    color: var(--light-text-color);
+}
+
+.additional-info__likes-item {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+
+.additional-info__likes-image {
+    width: 50%;
+    height: 170px;
+}
+
+.additional-info__likes-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.additional-info__likes-text {
+    flex: 1;
+    padding: 1em;
+}
+
+.additional-info__likes-item:hover {
+    border-color: var(--dark-acccent-color);
+    background-color: var(--background-color);
+    color: var(--dark-text-color);
+}
+
+.additional-info__likes-item h3 {
+    margin-bottom: 5px;
+}
+
+.additional-info__dislikes-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: var(--dark-text-color);
+}
+
+.additional-info__dislikes-item {
+    width: 100%;
+    border-radius: 20px;
+    padding: 1em;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 5px solid var(--dark-acccent-color);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.additional-info__dislikes-item i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+}
+
+.additional-info__dislikes-item:hover {
+    background-color: var(--dark-acccent-color);
+    color: var(--light-text-color);
+}
+
+.additional-info__dislikes-item h3 {
+    margin-bottom: 5px;
+}
