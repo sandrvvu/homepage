@@ -2,9 +2,173 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <div class="intro container">
+        <div class="intro__image-container">
+          <img class="intro__avatar" src="./assets/avatar.jpg" alt="avatar" />
+        </div>
+
+        <div class="intro__text-container">
+          <h1 class="intro__title title">
+            Hi, <span class="intro__highlight">It&#39;s Sasha!</span>
+          </h1>
+          <h2 class="intro__subtitle title">
+            I&#39;m a <span class="intro__highlight">Web Developer</span>
+          </h2>
+          <p class="intro__description">
+            Passionate web developer with a strong drive for continuous
+            learning. Skilled in HTML, CSS, JavaScript, React, TypeScript and
+            Redux. Eager to embrace new challenges and technologies to innovate
+            and deliver impactful solutions.
+          </p>
+          <p class="intro__description">
+            <em>Strengths:</em> High motivation to study, attention to details,
+            adaptability, composure.
+          </p>
+          <p class="intro__description">
+            <em>Weaknesses:</em> Chocolate, sometimes too critical of my own
+            mistakes (but who among us is not a perfectionist?)
+          </p>
+          <div class="intro__contact-info">
+            <div class="intro__link">
+              <a href="mailto: sashaasydorenko@gmail.com"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+            <div class="intro__link">
+              <a href="https://t.me/sandrwz" target="_blank"
+                ><i class="fab fa-telegram"></i
+              ></a>
+            </div>
+            <div class="intro__link">
+              <a
+                href="https://www.linkedin.com/in/oleksandra-sydorenko-a69bb4302/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="intro__link">
+              <a href="https://github.com/sandrvvu" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="education container">
+        <h2 class="education__title title">Education</h2>
+        <div class="timeline">
+          <div class="timeline__line">
+            <div class="timeline__circle"></div>
+          </div>
+          <div class="timeline__event">
+            <div class="timeline__text">
+              Kherson Physics and Technical Lyceum
+            </div>
+            <div class="timeline__text" style="font-weight: 800">2021</div>
+            <div class="timeline__text">
+              NTUU "Igor Sikorsky Kyiv Polytechnic Institute", Information
+              Systems and Technologies
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="assets/kpi.jpg" alt="university" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/book.jpg" alt="book on the table" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/model.jpg" alt="simulation model" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/me.jpg" alt="person with laptop" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/code.jpg" alt="programming code" />
+          </div>
+        </div>
+      </div>
+
+      <div class="additional-info container">
+        <h2 class="additional-info__title title">What I Love</h2>
+        <div class="additional-info__likes-container">
+          <div class="additional-info__likes-item">
+            <div class="additional-info__likes-image">
+              <img src="assets/dance.jpg" alt="Image" />
+            </div>
+            <div class="additional-info__likes-text">
+              <h3><i class="fas fa-star"></i> Dancing</h3>
+              <p>Because sometimes you just need to shake it off—literally.</p>
+            </div>
+          </div>
+          <div class="additional-info__likes-item">
+            <div class="additional-info__likes-image">
+              <img src="assets/writing.jpg" alt="Image" />
+            </div>
+            <div class="additional-info__likes-text">
+              <h3><i class="fas fa-file"></i> Journaling</h3>
+              <p>
+                Writing down my thoughts so they don&#39;t stage a coup in my
+                brain.
+              </p>
+            </div>
+          </div>
+          <div class="additional-info__likes-item">
+            <div class="additional-info__likes-image">
+              <img src="assets/travel.jpg" alt="Image" />
+            </div>
+            <div class="additional-info__likes-text">
+              <h3><i class="fas fa-plane"></i> Travelling</h3>
+              <p>Exploring new places and collecting memories (and magnets).</p>
+            </div>
+          </div>
+          <div class="additional-info__likes-item">
+            <div class="additional-info__likes-image">
+              <img src="assets/music.jpg" alt="Image" />
+            </div>
+            <div class="additional-info__likes-text">
+              <h3><i class="fas fa-music"></i> Listening to Music</h3>
+              <p>
+                Sometimes, I imagine I'm the protagonist in a music video...
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="additional-info__title title">What I Don&#39;t Love</h2>
+        <div class="additional-info__dislikes-container">
+          <div class="additional-info__dislikes-item">
+            <i class="fas fa-bezier-curve"></i>
+            <h3>Monotonous Routine:</h3>
+            <p>Feeling like a robot in a bad sci-fi movie.</p>
+          </div>
+          <div class="additional-info__dislikes-item">
+            <i class="fas fa-coffee"></i>
+            <h3>Running Out of Coffee:</h3>
+            <p>The apocalypse, but for real.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <h2 class="footer__title title">Thanks for reading!</h2>
+        <p class="footer__copyright">
+          <i class="fas fa-copyright"></i> Oleksandra Sydorenko | All Rights
+          Reserved
+        </p>
+      </div>
+    </main>
   </body>
 </html>
